@@ -44,6 +44,13 @@ public class Main {
                                 System.out.println("Process restarting.\n" + "Please choose a class :\n" + rpgClass);
                             }
                         }else if (str.equals("Thief") || str.equals("thief")){
+//                            try{
+//                                String thief = new String();
+//                                thief = UserType.getUserType();
+//                                System.out.println(thief);
+//                            }catch(Exception e){
+//                                System.out.println("Process restarting.\n" + "Please choose a class :\n" + rpgClass);
+//                            }
                             do{
                                 System.out.println("You choose Thief\n" + "Please now, choose a name");
                                 userType = new Scanner(System.in);
