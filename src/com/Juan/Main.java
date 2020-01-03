@@ -27,13 +27,11 @@ public class Main {
                     str = userType.nextLine();
                     switch (str){
                         case "berserker":
-                            System.out.println("hello world");
                             String berserk = Berserker.getBerserker();
                             System.out.println(berserk);
                             break;
                         case "thief":
-                            System.out.println("ohayo sekai");
-                            String robber = Thief.getThief(); // Robber is a synonymous of thief, it's the same .
+                            String robber = Thief.getThief(); // Robber is a synonymous of thief, it's the same.
                             System.out.println(robber);
                             break;
                     }
