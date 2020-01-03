@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-	// write your code here
+	// write your beautiful code here
         System.out.println("\nWelcome to the new rpg from DogSobre's Industries\n");
         String help = "- help\n" + "- create\n" + "- exit";
         String rpgClass = "- Berserker\n" + "- Thief\n";
@@ -28,14 +28,12 @@ public class Main {
                     switch (str){
                         case "berserker":
                             System.out.println("hello world");
-                            Berserker berserk = new Berserker();
-//                            String berserk = Berserker.getBerserker();
+                            String berserk = Berserker.getBerserker();
                             System.out.println(berserk);
                             break;
                         case "thief":
                             System.out.println("ohayo sekai");
-//                            String robber = Thief.getThief();
-                            Thief robber = new Thief(); // Robber is a synonymous of thief, it's the same .
+                            String robber = Thief.getThief(); // Robber is a synonymous of thief, it's the same .
                             System.out.println(robber);
                             break;
                     }

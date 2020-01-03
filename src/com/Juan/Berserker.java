@@ -5,17 +5,14 @@ public class Berserker {
 
     public static String getBerserker(){
 
-        String str = null;
+        String str = "";
         String finalUserType = "";
-        String strLower = str.toLowerCase();
         boolean isUserChosen = false;
-
-        if(strLower.equals("berserker")){
+        Scanner userType = new Scanner(System.in);
 
             do{
 
                 System.out.println("You choose Berserker\n" + "Please now, choose a name");
-                Scanner userType = new Scanner(System.in);
                 str = userType.nextLine();
                 String tempUserType = str;
 
@@ -31,10 +28,10 @@ public class Berserker {
 
                     System.out.println(berserker);
                     System.out.println("To continue, please type 'ok'");
+                    str = userType.nextLine();
                     isUserChosen = true;
                 }
             }while (!isUserChosen);
-        }
         return str;
     }
 }

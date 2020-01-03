@@ -1,21 +1,18 @@
 package com.Juan;
-
 import java.util.Scanner;
 
 public class Thief {
+
     public static String getThief(){
 
-        String str = null;
+        String str = "";
         String finalUserType = "";
-        String strLower = str.toLowerCase();
         boolean isUserChosen = false;
-
-        if(strLower.equals("thief")){
+        Scanner userType = new Scanner(System.in);
 
             do{
 
                 System.out.println("You choose Thief\n" + "Please now, choose a name");
-                Scanner userType = new Scanner(System.in);
                 str = userType.nextLine();
                 String tempUserType = str;
 
@@ -27,14 +24,14 @@ public class Thief {
 
                     finalUserType = tempUserType;
                     System.out.println("Ok, now see the different characteristics of the Thief :");
-                    MasterClass thief = new MasterClass(467, 81, 0, 37, 29, 315, 0.89);
+                    MasterClass thief = new MasterClass(329, 57, 23, 10, 10, 425, 1.02);
 
                     System.out.println(thief);
                     System.out.println("To continue, please type 'ok'");
+                    str = userType.nextLine();
                     isUserChosen = true;
                 }
-            }while (!isUserChosen);
-        }
+            }while(!isUserChosen);
         return str;
     }
 }
