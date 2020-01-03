@@ -36,10 +36,9 @@ public class Main {
                             break;
                     }
                     break;
-                /*case(str.equals("fight")){
-                     do{
-                    }while();
-                }*/ // "fight"
+                case "fight":
+                    
+                    break;
                 case "generics":
                     Generics generics = new Generics();
                     System.out.println(generics);
