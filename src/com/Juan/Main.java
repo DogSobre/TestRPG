@@ -16,6 +16,7 @@ public class Main {
             Scanner userType = new Scanner(System.in);
             System.out.println("This is the main menu, please enter your command (we have a secret command):");
             str = userType.nextLine();
+            String strLower = str.toLowerCase();
 
             ////// This is the loop which allow us to execute our program :
             switch (str){
@@ -24,10 +25,18 @@ public class Main {
                     break;
                 case "create":
                     System.out.println("Choose a class :\n" + rpgClass + "If you are done, please write 'ok'\n");
-                    UserType create = new UserType();
-                    System.out.println(create);
-
-//                    do{
+                    userType = new Scanner(System.in);
+                    str = userType.nextLine();
+                    switch (str){
+                        case "berserker":
+                            System.out.println("hello world");
+                            String create = Berserker.getBerserker();
+                            System.out.println(create);
+                            break;
+                        case "thief":
+                            System.out.println("ohayo sekai");
+                            break;
+                    }
 //                        userType = new Scanner(System.in);
 //                        str = userType.nextLine();
 //
@@ -90,7 +99,6 @@ public class Main {
                     System.out.println("I didn't understand please use the following commands :\n" + help);
                     break;
             }
-
         }while(str.equals("exit") != true);
     }
 }
