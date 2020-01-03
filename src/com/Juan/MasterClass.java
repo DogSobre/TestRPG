@@ -1,5 +1,4 @@
 package com.Juan;
-
 public class MasterClass{
 
     public String name;

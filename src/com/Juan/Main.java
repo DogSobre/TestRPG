@@ -1,5 +1,4 @@
 package com.Juan;
-
 import java.util.Scanner;
 
 public class Main {
@@ -16,9 +15,8 @@ public class Main {
             Scanner userType = new Scanner(System.in);
             System.out.println("This is the main menu, please enter your command (we have a secret command):");
             str = userType.nextLine();
-            String strLower = str.toLowerCase();
 
-            ////// This is the loop which allow us to execute our program :
+            ////// This is the switch which allow us to execute our program :
             switch (str){
                 case "help":
                     System.out.println("You can type:\n" + help);
@@ -30,11 +28,15 @@ public class Main {
                     switch (str){
                         case "berserker":
                             System.out.println("hello world");
-                            String create = Berserker.getBerserker();
-                            System.out.println(create);
+                            Berserker berserk = new Berserker();
+//                            String berserk = Berserker.getBerserker();
+                            System.out.println(berserk);
                             break;
                         case "thief":
                             System.out.println("ohayo sekai");
+//                            String robber = Thief.getThief();
+                            Thief robber = new Thief(); // Robber is a synonymous of thief, it's the same .
+                            System.out.println(robber);
                             break;
                     }
 //                        userType = new Scanner(System.in);
