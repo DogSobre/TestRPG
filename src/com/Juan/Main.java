@@ -37,7 +37,7 @@ public class Main {
                     }
                     break;
                 case "fight":
-                    
+
                     break;
                 case "generics":
                     Generics generics = new Generics();

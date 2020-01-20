@@ -1,4 +1,5 @@
 package com.Juan;
+
 public class Generics {
 
     public String toString() {

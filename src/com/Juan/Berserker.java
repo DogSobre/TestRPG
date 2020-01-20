@@ -1,4 +1,5 @@
 package com.Juan;
+
 import java.util.Scanner;
 
 public class Berserker {
